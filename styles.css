@@ -397,23 +397,38 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     height: 60px;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
+    background: var(--navy);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 16px;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
 }
 
-.mobile-logo {
-    height: 36px;
+.mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-icon {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+}
+
+.mobile-brand span {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 .mobile-menu-btn {
     background: none;
     border: none;
-    font-size: 1.5rem;
-    color: var(--navy);
+    font-size: 1.3rem;
+    color: #fff;
     cursor: pointer;
     padding: 8px;
 }
@@ -1919,12 +1934,66 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.85rem;
     }
     
+    .section-header {
+        margin-bottom: 20px;
+    }
+    
     .section-header h2 {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+    
+    .section-header h2 i {
+        font-size: 1rem;
+    }
+    
+    .section-header p {
+        font-size: 0.85rem;
     }
     
     .investment-cards {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .investment-card {
+        padding: 16px;
+    }
+    
+    .investment-card-header {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    
+    .investment-card-badge {
+        align-self: flex-start;
+    }
+    
+    .investment-card-body {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .investment-card-stat {
+        padding: 10px;
+    }
+    
+    .investment-card-stat label {
+        font-size: 0.7rem;
+    }
+    
+    .investment-card-stat strong {
+        font-size: 0.95rem;
+    }
+    
+    .investment-card-footer {
+        margin-top: 16px;
+    }
+    
+    .investment-card-footer button {
+        width: 100%;
+        justify-content: center;
     }
     
     .timeline {
@@ -1996,6 +2065,15 @@ h1, h2, h3, h4, h5, h6 {
         padding: 16px;
     }
     
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .table-header h3 {
+        font-size: 1rem;
+    }
+    
     .activity-card,
     .summary-card {
         padding: 16px;
@@ -2004,7 +2082,41 @@ h1, h2, h3, h4, h5, h6 {
     .investment-table th,
     .investment-table td {
         padding: 12px 8px;
+        font-size: 0.75rem;
+    }
+    
+    .investment-table {
+        min-width: 700px;
+    }
+    
+    .share-badge {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+    
+    .receipt-btn {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+    }
+    
+    .receipt-btn i {
         font-size: 0.8rem;
+    }
+    
+    .amount-info strong {
+        font-size: 0.85rem;
+    }
+    
+    .amount-secondary {
+        font-size: 0.65rem;
+    }
+    
+    .breakdown-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .breakdown-card {
+        padding: 16px;
     }
 }
 
